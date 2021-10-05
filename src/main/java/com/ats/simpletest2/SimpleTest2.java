@@ -12,7 +12,7 @@ public class SimpleTest2 {
         logger.debug("Hello from Log4j 2 - DEBUG");
         logger.error("Hello form Log4J 2 - ERROR Log");
         System.out.println("Simple Test FULL");
-        JOptionPane.showMessageDialog(null, "Hello");
+        //JOptionPane.showMessageDialog(null, "Hello");
     }
 
     public static String echo(String input ) {
