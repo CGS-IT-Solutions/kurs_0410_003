@@ -11,7 +11,7 @@ public class SimpleTest2 {
     public static void main(String[] args) {
         logger.debug("Hello from Log4j 2 - DEBUG");
         logger.error("Hello form Log4J 2 - ERROR Log");
-        System.out.println("Simple Test2 & 3 & 4");
+        System.out.println("Simple Test FULL SYSTEM");
         JOptionPane.showMessageDialog(null, "Hello");
     }
 
