@@ -16,6 +16,12 @@ pipeline {
                 }
             }
         }
+        stage('Build Rolands Project') {
+            steps {
+                echo 'This is the real build step'
+                sh 'mvn -B -DskipTests clean package'
+            }
+        }
     }
     post {
         failure {
