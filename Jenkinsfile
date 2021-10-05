@@ -16,6 +16,7 @@ pipeline {
                 }
             }
         }
+<<<<<<< HEAD
 
         stage('Build Project') {
             steps {
@@ -24,6 +25,14 @@ pipeline {
             }
         }
 
+=======
+        stage('Build Rolands Project') {
+            steps {
+                echo 'This is the real build step'
+                sh 'mvn -B -DskipTests clean package'
+            }
+        }
+>>>>>>> main
         stage('Build and Unit Test') {
             steps {
                 echo "Build and Unit Test"
@@ -35,7 +44,10 @@ pipeline {
                 }
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     }
     post {
         failure {
@@ -46,4 +58,7 @@ pipeline {
         }
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
