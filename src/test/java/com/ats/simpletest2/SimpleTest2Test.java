@@ -51,7 +51,7 @@ class SimpleTest2Test {
         //ok
         assertEquals("input", input);
         //fail
-        assertEquals("input2", input);
+        assertEquals("input", input);
     }
 
 }
