@@ -16,7 +16,7 @@ public class SimpleTest2 {
     }
 
     public static String echo(String input ) {
-        logger.debug("Hello from Log4j 2");
+        logger.debug("Echo from Log4j 2");
         return input;
     }
 
