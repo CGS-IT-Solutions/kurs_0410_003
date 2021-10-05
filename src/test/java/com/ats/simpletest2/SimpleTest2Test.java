@@ -45,10 +45,13 @@ class SimpleTest2Test {
         SimpleTest2.main(null);
     }
 
-
     @Test
     void echo() {
         String input = SimpleTest2.echo("input");
+        //ok
+        assertEquals("input", input);
+        //fail
         assertEquals("input2", input);
     }
+
 }
