@@ -32,6 +32,25 @@
         </plugins>
     </build>
 
+    <!-- /repository/maven-releases/ -->
+    <scm>
+        <url>https://github.com/CGS-IT-Solutions/kurs_0410_003</url>
+        <connection>scm:git:https://github.com/CGS-IT-Solutions/kurs_0410_003</connection>
+        <developerConnection>scm:git:https://github.com/CGS-IT-Solutions/kurs_0410_003</developerConnection>
+        <tag>test</tag>
+    </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>kurs_04_10</id>
+            <url>http://ec2-3-87-211-121.compute-1.amazonaws.com:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://ec2-3-87-211-121.compute-1.amazonaws.com:8081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -44,6 +63,16 @@
             <artifactId>junit-platform-runner</artifactId>
             <version>1.5.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
         </dependency>
     </dependencies>
 
